@@ -56,7 +56,7 @@ const SignupPage = () => {
 
             <button className={styles.signup_button}>Sign Up</button>
 
-            <p>
+            <p className={styles.terms_and_conditions_text}>
               By continiung , you agree to{" "}
               <Link to={"#"} className={styles.terms_Conditions_link}>
                 our Terms & Conditions Of Service

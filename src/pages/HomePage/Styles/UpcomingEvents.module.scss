@@ -1,0 +1,188 @@
+@use "../../../assets/styles/" as *;
+
+.UpcomingEvents {
+  // display: flex;
+  // flex-direction: column;
+  width: 100%;
+  padding: pixRem(10) pixRem(32);
+  // align-items: center;
+  // padding: 20vh 20vw;
+  // row-gap: pixRem(72);
+  // background-color: #ebf2f8;
+  background-color: #FFFFFF;
+  @include md() {
+    margin-top: 100px;
+    padding: 0 pixRem(18);
+  }
+  @include sm() {
+    margin-top: 30px;
+    padding: 0 pixRem(20);
+  }
+  h2 {
+    font-family: Lato;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 43.2px;
+    color: #02055A;
+    @include sm() {
+      text-align: center;
+      font-size: 24px;
+    }
+  }
+  main {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 74px;
+    @include sm() {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      // padding: 0 20px;
+    }
+    .event__details {
+      flex-basis: 10%;
+      width: 481px;
+      height: 592px;
+      @include sm() {
+        width: 100%;
+      }
+      .event__poster {
+        height: 305px;
+        width: 481px;
+        @include sm() {
+          height: 305px;
+          width: 100%;
+        }
+      }
+      figcaption {
+        font-family: Montserrat;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29.26px;
+        color: #02055A;
+      }
+      aside {
+        display: flex;
+        flex-direction: column;
+        :first-child {
+          font-family: Raleway;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 21.13px;
+          color: #253DA1;
+          margin-top: 10px;
+          @include sm() {
+            font-size: 16px;
+          }
+        }
+        :nth-child(2) {
+          font-family: Montserrat;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 24.38px;
+          color: #253DA1;
+          margin-top: 10px;
+          @include sm() {
+            font-size: 18px;
+          }
+        }
+        :nth-child(3) {
+          font-family: Raleway;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 18.78px;
+          color: #000000;
+          margin-top: 10px;
+          text-transform: uppercase;
+          @include sm() {
+            font-size: 14px;
+          }
+        }
+        :nth-child(4) {
+          font-family: Montserrat;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 24.38px;
+          color: #253DA1;
+          margin-top: 10px;
+          text-transform: capitalize;
+          @include sm() {
+            font-size: 18px;
+          }
+        }
+      }
+      .see__more {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        // margin: auto 0;
+        height: 50px;
+        .avatar {
+          position: absolute;
+          width: 50px;
+          height: 50px;
+        }
+        .btn {
+          position: absolute;
+          right: 4px;
+          bottom: 0;
+          button {
+            width: 128px;
+            height: 32px;
+            padding: 5px 21px 5px 21px;
+            border-radius: 20px;
+            background-color: #CEEDFC;
+            outline: none;
+            border: none;
+            font-family: Montserrat;
+            font-weight: 600;
+            font-size: 17.85px;
+            line-height: 21.76px;
+            color: #000000;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .register__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    button {
+      width: 402px;
+      height: 49px;
+      padding: 10px 64px 10px 64px;
+      border-radius: 5px;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      font-family: Montserrat;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29.26px;
+      color: #FFFFFF;
+      background-color: #526FE8;
+      @include sm() {
+        font-size: 20px;
+      }
+    }
+  }
+
+  @include md() {
+    padding: 0 pixRem(72);
+  }
+  // @include sm() {
+  //   padding: 10vh pixRem(20);
+  //   row-gap: pixRem(60);
+  // }
+}

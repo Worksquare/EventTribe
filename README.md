@@ -4,8 +4,8 @@ This is the main application for the public domain for Tribe Events.
 
 ## WEBSITE URL
 
-Netlify:- https://trybe-events.netlify.app
-Vercel:- https://trybe-events.vercel.app
+Netlify:- https://event-tribe-worksquare.netlify.app/
+Vercel:- https://event-tribe.vercel.app/
 
 ## FIGMA DESIGN FILE
 

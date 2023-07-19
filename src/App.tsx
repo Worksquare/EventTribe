@@ -5,7 +5,14 @@ import { AnimatePresence } from "framer-motion";
 import { PublicPageLayout, CredentialsPageLayout } from "./layouts";
 
 //pages
-import { SplashPage, HomePage, SignupPage } from "./pages";
+import {
+  SplashPage,
+  HomePage,
+  SignupPage,
+  ForgotPasswordPage,
+  LoginPage,
+  AboutUsPage,
+} from "./pages";
 
 //routes
 import { routePaths } from "./utils/";
@@ -22,11 +29,17 @@ const App = () => {
           {/* public pages */}
           <Route element={<PublicPageLayout />}>
             <Route path={routePaths.HOMEPAGE} element={<HomePage />} />
+            <Route path={routePaths.ABOUT_US} element={<AboutUsPage />} />
           </Route>
 
           {/* Credential pages i.e signup, login, forgot password */}
           <Route element={<CredentialsPageLayout />}>
             <Route path={routePaths.SIGNUP} element={<SignupPage />} />
+            <Route path={routePaths.LOGIN} element={<LoginPage />} />
+            <Route
+              path={routePaths.FORGOT_PASSWORD}
+              element={<ForgotPasswordPage />}
+            />
           </Route>
         </Routes>
       </AnimatePresence>

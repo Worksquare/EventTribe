@@ -25,3 +25,7 @@ export { default as event_promotion } from "./event_promotion.svg";
 export { default as facebook_transparent_icon } from "./facebook_icon.png";
 export { default as add_image_icon } from "./add_image.png";
 export { default as google_icon } from "./google_icon.png";
+export { default as hero_slide1 } from "./hero_slide1.svg";
+export { default as hero_slide2 } from "./hero_slide2.svg";
+export { default as hero_slide3 } from "./hero_slide3.svg";
+export { default as hero_slide4 } from "./hero_slide4.svg";

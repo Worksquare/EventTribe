@@ -5,7 +5,7 @@ const LoginPage = () => {
   return (
     <>
       <AnimatedFadeInPage>
-        <main className={styles.LoginPage}>LoginPage</main>
+        <main className={styles.LoginPage}>Success Emitech</main>
       </AnimatedFadeInPage>
     </>
   );

@@ -94,6 +94,7 @@ const Navbar = () => {
               return (
                 <NavLink
                   to={elem.link}
+                  // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
                   key={`${elem.link}_mobile`}
                   className={({ isActive, isPending }) =>
                     isPending

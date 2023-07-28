@@ -16,6 +16,8 @@ import {
 
 //routes
 import { routePaths } from "./utils/";
+import GotEmailpage from "./pages/GotEmailPage";
+import PasswordSuccessPage from "./pages/PasswordSuccessPage";
 
 const App = () => {
   const location = useLocation();
@@ -32,10 +34,12 @@ const App = () => {
             <Route path={routePaths.ABOUT_US} element={<AboutUsPage />} />
           </Route>
 
-          {/* Credential pages i.e signup, login, forgot password */}
+          {/* Credential pages i.e signup, login, forgot password, Got email,password success */}
           <Route element={<CredentialsPageLayout />}>
             <Route path={routePaths.SIGNUP} element={<SignupPage />} />
             <Route path={routePaths.LOGIN} element={<LoginPage />} />
+            <Route path={routePaths.GOT_EMAIL} element={<GotEmailpage />} />
+            <Route path={routePaths.PASSWORD_SUCCESSFUL} element={<PasswordSuccessPage />} />
             <Route
               path={routePaths.FORGOT_PASSWORD}
               element={<ForgotPasswordPage />}

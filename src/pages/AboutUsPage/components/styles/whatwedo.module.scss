@@ -1,0 +1,39 @@
+@use "../../../../assets/styles/" as *;
+.what {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    margin-top: 150px;
+    // padding-bottom: 150px;
+    gap: 60px;
+    @include md() {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    @include sm() {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    h2 {
+        font-family: Lato;
+        font-size: 800;
+        font-size: 36px;
+        line-height: 43.2px;
+        color: #000137;
+    }
+    p {
+        max-width: 1250px;
+        height: 174px;
+        text-align: center;
+        font-family: Lato;
+        font-size: 500;
+        font-size: 24px;
+        line-height: 29.26px;
+        color: #717171;
+    }
+}

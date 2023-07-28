@@ -29,3 +29,22 @@ export { default as hero_slide1 } from "./hero_slide1.svg";
 export { default as hero_slide2 } from "./hero_slide2.svg";
 export { default as hero_slide3 } from "./hero_slide3.svg";
 export { default as hero_slide4 } from "./hero_slide4.svg";
+export { default as mission_image1 } from "./mission_image1.svg"
+export { default as mission_image2 } from "./mission_image2.svg"
+export { default as mission_image3 } from "./mission_image3.svg"
+export { default as mission_image4 } from "./mission_image4.svg"
+export { default as mission_image5 } from "./mission_image5.svg"
+export { default as mission_image6 } from "./mission_image6.svg"
+export { default as stats_icon1 } from "./Group 11.png"
+export { default as stats_icon2 } from "./Group 12.png"
+export { default as value_icon1 } from "./value_icon.svg"
+export { default as value_icon2 } from "./value_icon2.svg"
+export { default as value_icon3 } from "./value_icon3.svg"
+export { default as value_icon4 } from "./value_icon4.svg"
+export { default as value_icon5 } from "./value_icon5.svg"
+export { default as value_icon6 } from "./value_icon6.svg"
+export { default as coma } from "./coma.svg"
+export { default as team1 } from "./Ellipse 16.png"
+export { default as team2 } from "./Ellipse 17.png"
+export { default as team3 } from "./Ellipse 18.png"
+export { default as team4 } from "./Ellipse 19.png"

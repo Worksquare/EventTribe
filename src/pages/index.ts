@@ -4,3 +4,4 @@ export { default as SignupPage } from "./SignupPage";
 export { default as LoginPage } from "./LoginPage";
 export { default as ForgotPasswordPage } from "./ForgotPasswordPage";
 export { default as AboutUsPage } from "./AboutUsPage";
+export { default as CreateEvent } from "./CreateEventPage"

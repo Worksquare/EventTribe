@@ -53,7 +53,7 @@ const Footer = () => {
               className={styles.get_started_button}
               to={`${routePaths.SIGNUP}`}
             >
-              Get Started
+              Help/Support
             </Link>
           </div>
 

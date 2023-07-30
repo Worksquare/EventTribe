@@ -43,11 +43,11 @@ export const events: IEvents[] = [
     },
     {
         eventPoster: charity_gala,
-        eventTheme: "TechX 2023: Explore the Future of Technology", 
-        eventDescription: "Discover the latest trends ,innovations and  breakthroughs in the tech industry.",
-        eventDate: "Saturday 20th July 2023,10am WAT",
+        eventTheme: "Charity Gala Night", 
+        eventDescription: "Join us for another evening of giving back at the shining star gala. Together we can make a difference in the lives of those in need.",
+        eventDate: "Tuesday 25th July 2023,10am WAT",
         eventCategory: "Free",
-        eventOrganizers: "Code Ambassadors",
+        eventOrganizers: "The Good Foundation",
         registeredParticipants: [
             {
                 name: "name",
@@ -69,11 +69,11 @@ export const events: IEvents[] = [
     },
     {
         eventPoster: halleluyah,
-        eventTheme: "TechX 2023: Explore the Future of Technology", 
-        eventDescription: "Discover the latest trends ,innovations and  breakthroughs in the tech industry.",
-        eventDate: "Saturday 20th July 2023,10am WAT",
-        eventCategory: "Free",
-        eventOrganizers: "Code Ambassadors",
+        eventTheme: "Halleluyah Festival", 
+        eventDescription: "Lorem ipsum dolor sit amet consectetur. Ut eu in volutpat elementum dui. Ut egestas interdum tristique cursus.",
+        eventDate: "Sundayy 2nd July 2023,10am WAT",
+        eventCategory: "8000 NGN",
+        eventOrganizers: "Nathaniel Bassey",
         registeredParticipants: [
             {
                 name: "name",
@@ -95,11 +95,11 @@ export const events: IEvents[] = [
     },
     {
         eventPoster: wofbec,
-        eventTheme: "TechX 2023: Explore the Future of Technology", 
+        eventTheme: "WOFBEC Conference", 
         eventDescription: "Discover the latest trends ,innovations and  breakthroughs in the tech industry.",
-        eventDate: "Saturday 20th July 2023,10am WAT",
-        eventCategory: "Free",
-        eventOrganizers: "Code Ambassadors",
+        eventDate: "Sunday 31st July 2023,10am WAT",
+        eventCategory: "8000 NGN",
+        eventOrganizers: "The Convenant Nation",
         registeredParticipants: [
             {
                 name: "name",
@@ -121,11 +121,11 @@ export const events: IEvents[] = [
     },
     {
         eventPoster: who,
-        eventTheme: "TechX 2023: Explore the Future of Technology", 
-        eventDescription: "Discover the latest trends ,innovations and  breakthroughs in the tech industry.",
-        eventDate: "Saturday 20th July 2023,10am WAT",
-        eventCategory: "Free",
-        eventOrganizers: "Code Ambassadors",
+        eventTheme: "WHO Health Seminar", 
+        eventDescription: "Join us for another evening of giving back at the shining star gala. Together we can make a difference in the lives of those in need.",
+        eventDate: "Friday 28th July 2023,10am WAT",
+        eventCategory: "8000 NGN",
+        eventOrganizers: "World Health Organization",
         registeredParticipants: [
             {
                 name: "name",
@@ -147,11 +147,11 @@ export const events: IEvents[] = [
     },
     {
         eventPoster: trade_fair,
-        eventTheme: "TechX 2023: Explore the Future of Technology", 
-        eventDescription: "Discover the latest trends ,innovations and  breakthroughs in the tech industry.",
-        eventDate: "Saturday 20th July 2023,10am WAT",
+        eventTheme: "NaijaBrandChick Trade Fair", 
+        eventDescription: "Lorem ipsum dolor sit amet consectetur. Ut eu in volutpat elementum dui. Ut egestas interdum tristique cursus.",
+        eventDate: "Sunday 30th July 2023,10am WAT",
         eventCategory: "Free",
-        eventOrganizers: "Code Ambassadors",
+        eventOrganizers: "The Naija Brand Chick",
         registeredParticipants: [
             {
                 name: "name",

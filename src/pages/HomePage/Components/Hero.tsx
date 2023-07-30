@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import styles from '../Styles/Hero.module.scss';
 import { hero_right_panel, hero_slide1, hero_slide2, hero_slide3, hero_slide4 } from '../../../assets/images';
+import { routePaths } from '../../../utils';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   const [content, setContent] = useState(0);
@@ -52,7 +54,9 @@ const Hero = () => {
               {index !== contentItems[content].text.length - 1 && <br />}
             </React.Fragment>
           ))}
-          <button>Create Event</button>
+          <Link to={`${routePaths.CREATE_EVENT}`} style={{textDecoration: 'none'}}>
+            <button>Create Event</button>
+          </Link>
         </span>
       </div>
       <div className={`${styles.hero__right__panel} ${fadeIn ? styles.fadeIn : styles.fadeOut}`}>

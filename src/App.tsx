@@ -12,12 +12,14 @@ import {
   ForgotPasswordPage,
   LoginPage,
   AboutUsPage,
+  CreateEvent
 } from "./pages";
 
 //routes
 import { routePaths } from "./utils/";
 import GotEmailpage from "./pages/GotEmailPage";
 import PasswordSuccessPage from "./pages/PasswordSuccessPage";
+import AuthorizedPageLayout from "./layouts/AuthorizedPageLayout";
 
 const App = () => {
   const location = useLocation();
@@ -44,6 +46,11 @@ const App = () => {
               path={routePaths.FORGOT_PASSWORD}
               element={<ForgotPasswordPage />}
             />
+          </Route>
+
+          {/* Authorized pages*/}
+          <Route element={<AuthorizedPageLayout />}>
+            <Route path={routePaths.CREATE_EVENT} element={<CreateEvent />} />
           </Route>
         </Routes>
       </AnimatePresence>

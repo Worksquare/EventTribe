@@ -9,7 +9,8 @@ const routePaths = {
   FORGOT_PASSWORD: "/auth/reset-password",
   GOT_EMAIL: "/auth/got-email",
   PASSWORD_SUCCESSFUL: "/auth/password-successful",
-  CREATE_EVENT: "/create-event"
+  CREATE_EVENT: "/create-event",
+  EVENT: "/event/:eventId",
 };
 
 export default routePaths;

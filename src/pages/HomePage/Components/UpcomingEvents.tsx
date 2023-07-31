@@ -1,6 +1,8 @@
 import styles from "../Styles/UpcomingEvents.module.scss";
 // import { who, trade_fair, wofbec, halleluyah, charity_gala, techX } from "../../../assets/images";
 import { events } from "../../../data/events";
+import { routePaths } from "../../../utils";
+import { Link } from "react-router-dom";
 
 const UpcomingEvents = () => {
   return (
@@ -38,13 +40,19 @@ const UpcomingEvents = () => {
                   </figure>
               ))}
               </>
-              <span className={styles.btn}><button>See More</button></span>
+              <span className={styles.btn}>
+                <Link to={`/event/${event.eventId}`}>
+                  <button>See More</button>
+                </Link>
+              </span>
             </div>
           </div>
         ))}
       </main>
       <div className={styles.register__btn}>
-        <button>Register for an event</button>
+        <Link to={`${routePaths.EVENT_LISTINGS}`}>
+          <button>Register for an event</button>
+        </Link>
       </div>
     </section>
   );

@@ -1,0 +1,71 @@
+@use "../../../../assets/styles/" as *;
+
+
+.TrendingCategories {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    h3 {
+      font-family: Lato;
+      font-weight: 800;
+      font-size: 36px;
+      line-height: 43.2px;
+      color: #02055A;
+      @include sm() {
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 36px;
+        font-family: Lato;
+      }
+    }
+    input[type="checkbox"] {
+      display: none;
+    }
+    main {
+      margin-top: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content:center;
+      align-items: center;
+      gap: 0 93px; 
+      width: 1053px;
+      height: 153px;
+      @include sm() {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 10px 33px; 
+        width: 100%;
+        height: 100%;
+      }
+      label {
+        padding: 16px 52px 16px 52px;
+        height: 61px;
+        border-radius: 15px;
+        color: #253DA1;
+        background: #EFEFEF;
+        text-align: center;
+        font-family: Montserrat;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 29.26px;
+        cursor: pointer;
+        @include sm() {
+          padding: 10px 30px;
+          height: 45px;
+          border-radius: 15px;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 24px;
+          text-align: center;
+        }
+      } 
+      input[type="checkbox"]:checked + label {
+        background: #253DA1;
+        color: #EFEFEF;
+      }    
+    }
+}

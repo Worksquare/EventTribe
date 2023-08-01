@@ -28,7 +28,7 @@ const SearchCategories = () => {
           <label htmlFor="gospel-checkbox">Gospel</label>
 
           <input type="checkbox" id="holiday-checkbox" />
-          <label htmlFor="holiday-checkbox">Holidat</label>
+          <label htmlFor="holiday-checkbox">Holiday</label>
 
           <input type="checkbox" id="business-checkbox" />
           <label htmlFor="business-checkbox">Business</label>

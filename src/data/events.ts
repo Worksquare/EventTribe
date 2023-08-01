@@ -1,5 +1,6 @@
 import { techX, charity_gala, halleluyah, wofbec, who, trade_fair, dp1, dp2, dp3, dp4 } from "../assets/images"
 export interface IEvents {
+    eventId: string
     eventPoster: string
     eventTheme: string
     eventDescription: string
@@ -16,6 +17,7 @@ export interface Person {
 
 export const events: IEvents[] = [
     {
+        eventId: "aB3dFgH7",
         eventPoster: techX,
         eventTheme: "TechX 2023: Explore the Future of Technology", 
         eventDescription: "Discover the latest trends ,innovations and  breakthroughs in the tech industry.",
@@ -24,24 +26,25 @@ export const events: IEvents[] = [
         eventOrganizers: "Code Ambassadors",
         registeredParticipants: [
             {
-                name: "name",
+                name: "Favour Okonkwo",
                 profile_picture: dp1,
             },
             {
-                name: "name",
+                name: "Victor Thompson",
                 profile_picture: dp2,
             },
             {
-                name: "name",
+                name: "Ariella Adeyemo",
                 profile_picture: dp3,
             },
             {
-                name: "name",
+                name: "Favour Okonkwo",
                 profile_picture: dp3,
             }
         ] 
     },
     {
+        eventId: "Kj2LpRt4",
         eventPoster: charity_gala,
         eventTheme: "Charity Gala Night", 
         eventDescription: "Join us for another evening of giving back at the shining star gala. Together we can make a difference in the lives of those in need.",
@@ -50,24 +53,25 @@ export const events: IEvents[] = [
         eventOrganizers: "The Good Foundation",
         registeredParticipants: [
             {
-                name: "name",
+                name: "Favour Okonkwo",
                 profile_picture: dp1,
             },
             {
-                name: "name",
+                name: "Victor Thompson",
                 profile_picture: dp2,
             },
             {
-                name: "name",
+                name: "Ariella Adeyemo",
                 profile_picture: dp3,
             },
             {
-                name: "name",
+                name: "Favour Okonkwo",
                 profile_picture: dp4,
             }
         ] 
     },
     {
+        eventId: "qW8sYzX5",
         eventPoster: halleluyah,
         eventTheme: "Halleluyah Festival", 
         eventDescription: "Lorem ipsum dolor sit amet consectetur. Ut eu in volutpat elementum dui. Ut egestas interdum tristique cursus.",
@@ -76,24 +80,25 @@ export const events: IEvents[] = [
         eventOrganizers: "Nathaniel Bassey",
         registeredParticipants: [
             {
-                name: "name",
+                name: "Favour Okonkwo",
                 profile_picture: dp1,
             },
             {
-                name: "name",
+                name: "Victor Thompson",
                 profile_picture: dp2,
             },
             {
-                name: "name",
+                name: "Ariella Adeyemo",
                 profile_picture: dp3,
             },
             {
-                name: "name",
-                profile_picture: dp4,
+                name: "Favour Okonkwo",
+                profile_picture: dp3,
             }
         ] 
     },
     {
+        eventId: "M6nTbVc9",
         eventPoster: wofbec,
         eventTheme: "WOFBEC Conference", 
         eventDescription: "Discover the latest trends ,innovations and  breakthroughs in the tech industry.",
@@ -102,24 +107,25 @@ export const events: IEvents[] = [
         eventOrganizers: "The Convenant Nation",
         registeredParticipants: [
             {
-                name: "name",
+                name: "Favour Okonkwo",
                 profile_picture: dp1,
             },
             {
-                name: "name",
+                name: "Victor Thompson",
                 profile_picture: dp2,
             },
             {
-                name: "name",
+                name: "Ariella Adeyemo",
                 profile_picture: dp3,
             },
             {
-                name: "name",
-                profile_picture: dp4,
+                name: "Favour Okonkwo",
+                profile_picture: dp3,
             }
         ] 
     },
     {
+        eventId: "eR1uYwZ0",
         eventPoster: who,
         eventTheme: "WHO Health Seminar", 
         eventDescription: "Join us for another evening of giving back at the shining star gala. Together we can make a difference in the lives of those in need.",
@@ -128,24 +134,25 @@ export const events: IEvents[] = [
         eventOrganizers: "World Health Organization",
         registeredParticipants: [
             {
-                name: "name",
+                name: "Favour Okonkwo",
                 profile_picture: dp1,
             },
             {
-                name: "name",
+                name: "Victor Thompson",
                 profile_picture: dp2,
             },
             {
-                name: "name",
+                name: "Ariella Adeyemo",
                 profile_picture: dp3,
             },
             {
-                name: "name",
-                profile_picture: dp4,
+                name: "Favour Okonkwo",
+                profile_picture: dp3,
             }
         ] 
     },
     {
+        eventId: "iK7jHdF3",
         eventPoster: trade_fair,
         eventTheme: "NaijaBrandChick Trade Fair", 
         eventDescription: "Lorem ipsum dolor sit amet consectetur. Ut eu in volutpat elementum dui. Ut egestas interdum tristique cursus.",
@@ -154,20 +161,20 @@ export const events: IEvents[] = [
         eventOrganizers: "The Naija Brand Chick",
         registeredParticipants: [
             {
-                name: "name",
+                name: "Favour Okonkwo",
                 profile_picture: dp1,
             },
             {
-                name: "name",
+                name: "Victor Thompson",
                 profile_picture: dp2,
             },
             {
-                name: "name",
+                name: "Ariella Adeyemo",
                 profile_picture: dp3,
             },
             {
-                name: "name",
-                profile_picture: dp4,
+                name: "Favour Okonkwo",
+                profile_picture: dp3,
             }
         ] 
     }

@@ -1,0 +1,362 @@
+@use "../../assets/styles/" as *;
+
+.EventPage {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 40px 0;
+  @include sm() {
+    padding: 20px;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    @include sm() {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .event__backdrop {
+      width: 984px;
+      height: 456px;
+    }
+    .share_like {
+      align-self: flex-end;
+      margin-bottom: 20px;
+      @include sm() {
+        align-self: center;
+      }
+      img {
+        padding: 10px;
+      }
+    }
+  }
+  .selected_event_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #F8F8F8;
+    margin-top: 150px;
+    padding: 40px 180px;
+    margin: 80px 220px;
+    @include sm() {
+      padding: 20px;
+      width: 100%;
+      margin: 80px 0;
+    }
+    h3 {
+      color: #000137;
+      font-family: Montserrat;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+    }
+    .event_small_date {
+      align-self: flex-start;
+      p {
+        color: #000;
+        font-family: Raleway;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+    }
+    .selected_event_description {
+      color: #000;
+      font-family: Raleway;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+    .organizers_profile {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #FFFFFF;
+      width: 100%;
+      margin-top: 30px;
+      @include sm() {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      @include md() {
+        display: flex;
+        // flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 20px;
+      }
+      .organizers_bio {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        .organizers_name {
+          color: #253DA1;
+          font-family: Montserrat;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+        .organizers_followers {
+          color: #111;
+          font-family: Raleway;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+      }
+      .organizers_contact {
+        display: flex;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 28px;
+        // @include md() {
+        //   display: flex;
+        //   flex-direction: column;
+        // }
+        .organizers_follow_button {
+          display: flex;
+          width: 134px;
+          padding: 10px 64px;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          flex-shrink: 0;
+          color: #FFF;
+          font-family: Raleway;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          background-color: #526FE8;
+          border-radius: 5px;
+          outline: none;
+          border: none;
+          cursor: pointer;
+        }
+        .organizers_contact_button {
+          display: flex;
+          width: 134px;
+          padding: 10px 64px;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          flex-shrink: 0;
+          color: #526FE8;
+          font-family: Raleway;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          background-color: #FFFFFF;
+          border-radius: 5px;
+          outline: none;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+    .participant_details {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 20px;
+      width: 100%;
+      .registered_attendees {
+        justify-self: flex-start;
+        align-self: flex-start;
+        color: #111;
+        font-family: Raleway;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+      .participant_container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+        @include sm() {
+          display: flex;
+          flex-direction: column;
+        }
+        @include md() {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      .participant_name_pic {
+        display: flex;
+        display: flex;
+        padding: 5px;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        .participant_name {
+          color: #253DA1;
+          font-family: Raleway;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+    .event_timestamp {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+      margin-top: 40px;
+      @include sm() {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      @include md() {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .timestamp_container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .event_date_title, .event_venue {
+          color: #414141;
+          font-family: Montserrat;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+        .event_date, .event_address {
+          color: #000;
+          font-family: Raleway;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+    .ticket_quantity {
+      display: flex;
+      width: 448px;
+      height: 262px;
+      padding: 67px 30px;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      background-color: #FFFFFF;
+      margin-top: 40px;
+      @include sm() {
+        display: flex;
+        width: 100%;
+        padding: 20px;
+      }
+      .quantity_container {
+        display: flex;
+        width: 388px;
+        height: 128px;
+        padding: 15px 46px 13px 46px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 37px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        border: 1px solid #4629D3;
+        background: #FFF;
+        @include sm() {
+          width: 100%;
+        }
+        .general_admission {
+          color: #414141;
+          font-family: Montserrat;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          white-space: nowrap;
+          @include sm() {
+            font-size: 14px;
+          }
+        }
+        b {
+          color: #253DA1;
+          font-family: Raleway;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          @include sm() {
+            font-size: 14px;
+          }
+        }
+        .increase_btn {
+          width: 44px;
+          height: 36px;
+          background-color: #26A36C;
+          outline: none;
+          border: none;
+          color: #FFFFFF;
+        }
+        .decrease_btn {
+          width: 44px;
+          height: 36px;
+          background-color: #DCEFED;
+          outline: none;
+          border: none;
+          color: #000000;
+        }
+      }
+    }
+    .get_ticket {
+      margin-top: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      button {
+        display: inline-flex;
+        padding: 10px 64px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border-radius: 5px;
+        background: #526FE8;  
+        outline: none;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+
+  // @include sm() {
+  //   padding: 40px 20px 100px 20px;
+  //   justify-content: flex-start;
+  // }
+}

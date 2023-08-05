@@ -22,6 +22,7 @@ import PasswordSuccessPage from "./pages/PasswordSuccessPage";
 import AuthorizedPageLayout from "./layouts/AuthorizedPageLayout";
 import EventsListing from "./pages/EventsListingPage";
 import Event from "./pages/EventPage";
+import TicketInfoPage from "./pages/TicketInfoPage";
 
 const App = () => {
   const location = useLocation();
@@ -55,6 +56,7 @@ const App = () => {
             <Route path={routePaths.CREATE_EVENT} element={<CreateEvent />} />
             <Route path={routePaths.EVENT_LISTINGS} element={<EventsListing />} />
             <Route path={routePaths.EVENT} element={<Event />} />
+            <Route path={routePaths.TICKET_INFO} element={<TicketInfoPage/>} />
           </Route>
         </Routes>
       </AnimatePresence>

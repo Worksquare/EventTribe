@@ -11,6 +11,7 @@ const routePaths = {
   PASSWORD_SUCCESSFUL: "/auth/password-successful",
   CREATE_EVENT: "/create-event",
   EVENT: "/event/:eventId",
+  TICKET_INFO: "/ticket-info",
 };
 
 export default routePaths;

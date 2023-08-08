@@ -1,0 +1,154 @@
+@use "../../assets/styles/" as *;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@300;400;500&display=swap');
+.TicketInfoPage{
+  font-family: 'Montserrat', sans-serif;
+  width: 70%;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: rgba(248, 248, 248, 1);
+  @include sm() {
+    width: 100%;
+  }
+  form{
+    h4{
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 25px;
+      padding: 10px 0;
+      color: rgba(80, 76, 76, 1)
+    }
+    h6{
+      color: rgba(0, 0, 0, 1);
+      font-size: 15px;
+      line-height: 18px;
+      padding: 0 0 20px 0;
+      font-weight: 400;
+    }
+    .attendees_name, .email_container, .username_container{
+      display: flex;
+      flex-direction: column;
+      width: 55%;
+      padding: 10px 0;
+      gap: 20px;
+      @include sm() {
+        width: 100%;
+      }
+      p{
+        font-size: 15px;
+        line-height: 18px;
+        font-weight: 600;
+        padding: 10px 0;
+        span{
+          color: rgba(242, 78, 30, 1);
+        }
+        
+      }
+      input{
+        padding: 12px 20px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 15px;
+        color: rgba(202, 200, 200, 1);
+        border-radius: 8px;
+        border: none;
+      }
+    }
+    .checkbox_container{
+      padding: 10px 0;
+      input{
+        background: rgba(217, 217, 217, 1);
+        border: none;
+        outline: none;
+      }
+      span{
+        padding-left: 10px;
+        color: rgba(89, 85, 85, 1);
+        font-family: 'Raleway', sans-serif;
+        font-size: 15px;
+        line-height: 15px;
+        font-weight: 400;
+      }
+    }
+    .table_container{
+      margin: 2rem;
+      table{
+        border: 1px solid rgba(70, 41, 211, 1);
+        padding: 10px 40px 10px 20px;
+        border-radius: 8px;
+        thead{
+          td{
+            text-align: center;
+            padding: 0 0 10px 30px;
+            font-weight: 500;
+            font-size: 18px;
+          }
+        }
+        tbody{
+          tr{
+           color: rgba(65, 65, 65, 1);
+           font-size: 18px;
+           font-weight: 400;
+           td{
+            padding: 8px;
+            span{
+              color: rgba(70, 41, 211, 1);
+              font-weight: 700;
+            }
+           }
+           .span_thick{
+            font-weight: 700;
+          }
+          }
+          hr{
+            width: 150%;
+            margin: 5px 0;
+            color: rgba(202, 200, 200, 1);
+          }
+          .table_total{
+            border: 5px solid rgb(15, 15, 15);
+          }
+
+        }
+      }
+     
+    }
+    .terms_condition{
+      text-align: center;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 15px;
+      font-family: 'Raleway', sans-serif;
+      margin: 30px 0;
+      span{
+        color: rgba(37, 61, 161, 1);
+      }
+    }
+    .info_ticket_btn{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 7rem;
+     
+      .continue_btn{
+        background: rgba(82, 111, 232, 1);
+        color: #fff;
+        border-radius: 10px;
+        padding: 10px 40px 10px 40px;
+        border: none;
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 20px;
+        cursor: pointer;
+      }
+      .back_btn{
+        border: 2px solid rgba(33, 64, 214, 1);
+        background: rgba(255, 255, 255, 1);
+        color: rgba(0, 0, 0, 1);
+        padding: 10px 30px 10px 30px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}

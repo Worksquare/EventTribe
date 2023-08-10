@@ -66,7 +66,7 @@ const TicketInfoPage = () => {
                 <button type="submit" className={styles.continue_btn}>
                   continue
                 </button>
-                <Link to={`${routePaths.CREATE_EVENT}`}>
+                <Link to={`${routePaths.EVENT}`}>
                   <button className={styles.back_btn}>Back</button>
                 </Link>
               </div>

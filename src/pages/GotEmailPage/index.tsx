@@ -13,7 +13,7 @@ const GotEmailpage = () => {
         <p>We sent a reset password link to <br />  johnmensah@gmail.com</p>
 
         <button className= {styles.open_email_btn}>Open Email App</button>
-        <p>Didn’t receive the email? <span> Click to Resend</span></p>
+        <p className={styles.receive_mail}>Didn’t receive the email? <span className={styles.receive_mail_span}> Click to Resend</span></p>
         <button className= {styles.back_to_login_btn}><span> ⬅</span> Back to LOGIN</button>
       </div>
     </main>

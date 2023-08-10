@@ -12,17 +12,18 @@ import {
   closeNavbar,
   openNavbar,
 } from "../../redux/features/mobileNav/mobileNavSlice";
-import { search } from "../../assets/images";
+import { search, add_organizer, user_dp } from "../../assets/images";
 // import { selectCurrentUserName } from "../../redux/features/auth/authSlice";
 
 const AuthorizedNavbar = () => {
   const dispatch = useDispatch();
   const mobileNavbarOpen = useSelector(currentMobileNavState);
+  
   const navElements = [
-    { link: routePaths.HOMEPAGE, name: "Add An Organizer" },
+    { link: routePaths.HOMEPAGE, name: "Add An Organizer", icon: <img src={add_organizer} alt="add_organizer_icon" style={{width: "40px", height: "40px"}} />},
     { link: routePaths.ABOUT_US, name: "My Events" },
     { link: routePaths.GET_A_TICKET, name: "My Tickets" },
-    { link: routePaths.EVENT_LISTINGS, name: "Jonathan" },
+    { link: routePaths.EVENT_LISTINGS, name: "Jonathan", icon: <img src={user_dp} alt="user_dp" style={{width: "40px", height: "40px"}} /> },
   ];
 
   return (
@@ -56,8 +57,10 @@ const AuthorizedNavbar = () => {
                       ? styles.single_NavLinkActive
                       : styles.single_NavLink
                   }
+                  style={{ display: "flex", flexDirection: "row", gap: "2px", justifyContent: "center", alignItems: "center"}}
                 >
-                  {elem.name}
+                  <span>{elem.icon}</span>
+                  <span>{elem.name}</span>
                 </NavLink>
               );
             })}

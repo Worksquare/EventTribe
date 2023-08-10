@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 import styles from "./EventPage.module.scss"
 import { events } from "../../data/events"
 import { share, like, organizers } from "../../assets/images"
@@ -6,6 +6,7 @@ import { TrendingCategories } from "../EventsListingPage/Components"
 import { useState } from "react"
 
 const Event = () => {
+    const navigate = useNavigate()
     const { eventId } = useParams()
     const selectedEventId = eventId
     const [quantity, setQuantity] = useState(0)
@@ -25,6 +26,11 @@ const Event = () => {
             setQuantity(quantity - 1)
         }
     }
+
+    const handleGetTicket = () => {
+        navigate('/ticket-info')
+    }
+
     return (
         <div className={styles.EventPage}>
             <header>
@@ -97,7 +103,7 @@ const Event = () => {
                     </div>
                 </div>
                 <div className={styles.get_ticket}>
-                    <button>
+                    <button onClick={handleGetTicket}>
                         Get Ticket
                     </button>
                 </div>

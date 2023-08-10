@@ -97,15 +97,27 @@
         display: none;
       }
 
-      .login_button,
+      .login_button {
+        color: #02055A;
+        font-family: Montserrat;
+        font-size: 17.85px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        padding: 5px 14px;
+        text-decoration: none;
+        border-radius: 10px;
+        border: 1px solid #C4C4C4;
+        background: #FFF;
+      }
       .signup_button {
         text-decoration: none;
-        padding: 6px 20px;
-        border-radius: 24px;
-        background: #ceedfc;
-        color: #000;
+        padding: 5px 14px;
+        border-radius: 10px;
+        background: #526FE8;
+        color: #FFF;
         font-family: Montserrat;
-        font-size: 18px;
+        font-size: 17.85px;
         font-weight: 600;
         line-height: 20px;
         transition: all ease 0.2s;

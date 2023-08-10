@@ -1,16 +1,29 @@
+import { events } from "../../data/events";
 import { AnimatedFadeInPage, routePaths } from "../../utils";
 import styles from "./TicketInfoPage.module.scss";
-import { Link } from "react-router-dom";
+import { Link,useParams } from "react-router-dom";
 
 const TicketInfoPage = () => {
+   const { eventId } = useParams()
+   console.log(eventId)
+    const selectedEventId = eventId
+  //   // const [quantity, setQuantity] = useState(0)
+
+   const selectedEvent = events.find((event) => event.eventId === selectedEventId)
+console.log(selectedEvent)
+  //   if (!selectedEvent) {
+  //       return <div>Event not found</div>
+  //   }
   return (
     <>
       <AnimatedFadeInPage>
         <main>
+        
           <div className={styles.TicketInfoPage}>
             <form>
               <h4>Your Information</h4>
-              <h6>TedX 2023 (Explore The Future Of Tech)</h6>
+              {/* <h6>TedX 2023 (Explore The Future Of Tech)</h6> */}
+              <h6>{selectedEvent?.eventTheme}</h6>
               <div className={styles.attendees_name}>
                 <p>
                   Attendee Name <span>*</span>

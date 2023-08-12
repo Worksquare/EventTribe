@@ -104,8 +104,9 @@
 
     .navLinks_Desktop {
       display: flex;
+      justify-content: flex-end;
       align-items: center;
-      gap: pixRem(80);
+      gap: pixRem(20);
 
       @include md() {
         gap: pixRem(80);
@@ -167,6 +168,10 @@
         font-weight: 600;
         line-height: 20px;
         transition: all ease 0.2s;
+        white-space: nowrap;
+        @include md() {
+          white-space: nowrap;
+        }
       }
 
       .login_button:hover,

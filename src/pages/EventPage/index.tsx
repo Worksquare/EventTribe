@@ -1,4 +1,4 @@
-import { useParams, Link } from "react-router-dom"
+import { useNavigate, useParams, Link } from "react-router-dom"
 import styles from "./EventPage.module.scss"
 import { events } from "../../data/events"
 import { share, like, organizers } from "../../assets/images"
@@ -8,6 +8,7 @@ import { useState } from "react"
 
 
 const Event = () => {
+    const navigate = useNavigate()
     const { eventId } = useParams()
     const selectedEventId = eventId
     const [quantity, setQuantity] = useState(0)
@@ -27,6 +28,11 @@ const Event = () => {
             setQuantity(quantity - 1)
         }
     }
+
+    const handleGetTicket = () => {
+        navigate('/ticket-info')
+    }
+
     return (
         <div className={styles.EventPage}>
             <header>

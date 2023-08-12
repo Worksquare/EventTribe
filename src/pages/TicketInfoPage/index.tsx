@@ -1,9 +1,10 @@
 import { events } from "../../data/events";
-import { AnimatedFadeInPage, routePaths } from "../../utils";
+import { AnimatedFadeInPage } from "../../utils";
 import styles from "./TicketInfoPage.module.scss";
-import { Link,useParams } from "react-router-dom";
+import { useNavigate,useParams } from "react-router-dom";
 
 const TicketInfoPage = () => {
+  const navigate = useNavigate()
    const { eventId } = useParams()
    console.log(eventId)
     const selectedEventId = eventId
@@ -14,6 +15,10 @@ console.log(selectedEvent)
   //   if (!selectedEvent) {
   //       return <div>Event not found</div>
   //   }
+
+  const handleBackButton = () => {
+    navigate(`/event/${eventId}`)
+  }
   return (
     <>
       <AnimatedFadeInPage>
@@ -79,9 +84,9 @@ console.log(selectedEvent)
                 <button type="submit" className={styles.continue_btn}>
                   continue
                 </button>
-                <Link to={`${routePaths.EVENT}`}>
-                  <button className={styles.back_btn}>Back</button>
-                </Link>
+                <button className={styles.back_btn} onClick={handleBackButton}>
+                  Back
+                </button>
               </div>
             </form>
           </div>

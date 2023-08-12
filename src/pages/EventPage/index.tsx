@@ -1,9 +1,11 @@
-import { useParams } from "react-router-dom"
+import { useParams, Link } from "react-router-dom"
 import styles from "./EventPage.module.scss"
 import { events } from "../../data/events"
 import { share, like, organizers } from "../../assets/images"
 import { TrendingCategories } from "../EventsListingPage/Components"
 import { useState } from "react"
+// import { routePaths } from "../../utils"
+
 
 const Event = () => {
     const { eventId } = useParams()
@@ -97,9 +99,12 @@ const Event = () => {
                     </div>
                 </div>
                 <div className={styles.get_ticket}>
-                    <button>
-                        Get Ticket
-                    </button>
+                    {/* <button>
+                        
+                    </button> */}
+                    <Link to={`/ticket-info/${eventId }`}>
+                       <button>Get Ticket</button> 
+                    </Link>
                 </div>
             </section>
         </div>

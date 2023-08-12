@@ -43,13 +43,18 @@
         font-style: normal;
         font-weight: 600;
         line-height: normal;
-        padding: 20px 120px;
+        // padding: 20px 120px;
         cursor: pointer;
         border-radius: 6px;
         border: 1px solid #cbcbcb;
         background: #fff;
         transition: all 0.5s ease;
         width: 50%;
+        display: flex;
+        padding: 21.743px 130.459px;
+        justify-content: center;
+        align-items: center;
+        gap: 12.08px;
 
         @include sm() {
           font-size: 18px;

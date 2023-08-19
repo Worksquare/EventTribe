@@ -3,8 +3,32 @@ import { AnimatedFadeInPage } from "../../utils";
 import { signin_icon,
   // signin_bottom, signin_top 
 } from "../../assets/images";
+import { useLoginMutation } from "../../redux/app/api/loginApiSlice";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const LoginPage = () => {
+  const navigate = useNavigate()
+  const [login, { isLoading : isLoginLoading }] = useLoginMutation()
+  const [userData, setUserData] = useState({
+    email: "",
+    password: ""
+  })
+
+  const handleLogin = async (event: React.MouseEvent<HTMLButtonElement>) => {
+    event.preventDefault()
+    try {
+      const response = await login(userData);
+      console.log(response)
+      setTimeout(() => {
+        navigate('/event-listings')
+      }, 2000)
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
+
   return (
     <>
       <AnimatedFadeInPage>
@@ -20,12 +44,24 @@ const LoginPage = () => {
               <h3>Sign In</h3>
               <form action="">
                 <p>E-mail</p>
-                <input type="email" />
+                <input 
+                  type="email"
+                  onChange={(e) => setUserData({ ...userData, email: e.target.value })}
+                />
                 <p>Password</p>
-                <input type="password" />
+                <input 
+                  type="password"
+                  onChange={(e) => setUserData({ ...userData, password: e.target.value })}
+                />
                 <p>Forgot password</p>
                 <div className={styles.btn_container}>
-                  <button type="submit">SIGN IN</button>
+                  <button 
+                    type="submit"
+                    onClick={handleLogin}
+                    disabled={isLoginLoading}
+                  >
+                    {isLoginLoading ? 'Logging in...' : 'SIGN IN'}
+                  </button>
                 </div>
               </form>
             </div>

@@ -1,9 +1,9 @@
-export const BASE_URL = "";
+export const BASE_URL = "https://eventribe-backend.onrender.com";
 
 const apiRoutePaths = {
   auth: {
-    register: "/register",
-    login: "/login",
+    register: "/api/v1/auth/signup",
+    login: "/api/v1/auth/login",
     logout: "/auth/logout",
   },
 };

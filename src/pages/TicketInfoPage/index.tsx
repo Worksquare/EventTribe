@@ -19,6 +19,10 @@ console.log(selectedEvent)
   const handleBackButton = () => {
     navigate(`/event/${eventId}`)
   }
+
+  const handleContinueButton = () => {
+    navigate(`/event/${eventId}/checkout`)
+  }
   return (
     <>
       <AnimatedFadeInPage>
@@ -81,7 +85,7 @@ console.log(selectedEvent)
                 <span> our Terms & Conditions Of Service</span>
               </h6>
               <div className={styles.info_ticket_btn}>
-                <button type="submit" className={styles.continue_btn}>
+                <button type="submit" className={styles.continue_btn} onClick={handleContinueButton}>
                   continue
                 </button>
                 <button className={styles.back_btn} onClick={handleBackButton}>

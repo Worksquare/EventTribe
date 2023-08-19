@@ -1,5 +1,5 @@
 import styles from "./styles/ourteam.module.scss";
-import { team1, team2, team3, team4 } from "../../../assets/images";
+import { haleemah, oyindamola, emitech, samuel } from "../../../assets/images";
 
 const OurTeam = () => {
     return (
@@ -9,46 +9,46 @@ const OurTeam = () => {
             </span>
             <div className={styles.team1}>
                 <span>
-                    <img src={team1} alt="victor oladokun" />
+                    <img src={haleemah} alt="Halimat Jubril" />
                 </span>
                 <span>
-                    <p>Patricia Olaleye</p>
+                    <p>Halimat Jubril</p>
                 </span>
                 <span>
-                    <b>C.E.O</b>
+                    <b>Product</b>
                 </span>
             </div>
             <div className={styles.team2}>
                 <span>
-                    <img src={team2} alt="victor oladokun" />
+                    <img src={oyindamola} alt="Christianah Oladimeji" />
                 </span>
                 <span>
-                    <p>Victor Oladokun</p>
+                    <p>Christianah Oladimeji</p>
                 </span>
                 <span>
-                    <b>C.F.O</b>
+                    <b>Product</b>
                 </span>
             </div>
             <div className={styles.team3}>
                 <span>
-                    <img src={team3} alt="victor oladokun" />
+                    <img src={emitech} alt="Odezulu Augustine" />
                 </span>
                 <span>
-                    <p>Yvonne Jegede</p>
+                    <p>Odezulu Augustine</p>
                 </span>
                 <span>
-                    <b>Sales Manager</b>
+                    <b>Engineering</b>
                 </span>
             </div>
             <div className={styles.team4}>
                 <span>
-                    <img src={team4} alt="victor oladokun" />
+                    <img src={samuel} alt="Olaoluwa Samuel" />
                 </span>
                 <span>
-                    <p>John James</p>
+                    <p>Olaoluwa Samuel</p>
                 </span>
                 <span>
-                    <b>Marketing</b>
+                    <b>Engineering</b>
                 </span>
             </div>
         </main>

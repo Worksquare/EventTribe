@@ -21,7 +21,7 @@ const Navbar = () => {
     { link: routePaths.HOMEPAGE, name: "Home" },
     { link: routePaths.ABOUT_US, name: "About Us" },
     { link: routePaths.GET_A_TICKET, name: "Get a Ticket" },
-    { link: routePaths.EVENT_LISTINGS, name: "Event Listings" },
+    // { link: routePaths.EVENT_LISTINGS, name: "Event Listings" },
   ];
 
   return (

@@ -1,0 +1,227 @@
+@use "../../assets/styles/" as *;
+
+.TicketPrintOutPage {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    width: 100%;
+    padding: 40px 12rem;
+
+    @include sm() {
+        padding: 20px;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15PX 0;
+        h2 {
+            color: #000;
+            font-family: Lato;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            @include sm() {
+                text-align: center;
+                font-size: 28px;
+            }
+        }
+    }
+
+    section {
+        padding: 20px 40px;
+        border: 3px solid #DDD;
+        background: #FFF;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        .ticket_no {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img {
+                width: 178px;
+                height: 57px;
+                @include sm() {
+                    width: 100px;
+                    height: 32px;
+                }
+            }
+            h6 {
+                color: #353535;
+                font-family: Montserrat;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                @include sm() {
+                    font-size: 14px;
+                }
+            }
+            p {
+                color: #2D2C2C;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                @include sm() {
+                    font-size: 12px;
+                }
+            }
+        }
+        .print_box {
+            padding: 30px;
+            border-radius: 5px;
+            border: 3px solid #DDD;
+            .print_title {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                img {
+                    width: 132px;
+                    height: 45px;
+                    flex-shrink: 0;
+                    @include sm() {
+                        display: none;
+                    }
+                }
+                h4 {
+                    color: #000137;
+                    font-family: Montserrat;
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                    @include sm() {
+                        font-size: 26px;
+                    }
+                }
+            }
+            article {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                padding-top: 30px;
+                gap: 5px;
+                h5 {
+                    color: #02055A;
+                    font-family: Montserrat;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    @include sm() {
+                        font-size: 16px;
+                    }
+                }
+                p {
+                    color: #4E4848;
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    @include sm() {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        .print_footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            margin: 30px 0;
+            img {
+                width: 342px;
+                height: 342px;
+                flex-shrink: 0;
+                @include sm() {
+                    width: 170px;
+                    height: 170px;
+                }
+            }
+            .organizing_event {
+                display: flex;
+                flex-direction: column;
+                gap: 3px;
+                align-self: flex-end;
+                @include sm() {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                h1 {
+                    color: #000137;
+                    font-family: Lato;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                    margin-bottom: 10px;
+                    @include sm() {
+                        font-size: 12px;
+                    }
+                }
+                b {
+                    max-width: 286px;
+                    color: #767676;
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    @include sm() {
+                        font-size: 10px;
+                    }
+                }
+                strong {
+                    color: #767676;
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    @include sm() {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+            display: flex;
+            width: 217px;
+            height: 40px;
+            // padding: 10px 64px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            color: #FFF;
+            font-family: Montserrat;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            border-radius: 10px;
+            background: #526FE8;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            margin: 100px 0;
+            @include sm() {
+                font-size: 20px;
+            }
+        }
+    }
+}

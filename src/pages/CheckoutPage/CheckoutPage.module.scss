@@ -1,0 +1,198 @@
+@use "../../assets/styles/" as *;
+
+.CheckoutPage {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    width: 100%;
+    padding: 40px 12rem;
+
+    @include sm() {
+        padding: 20px;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        h4 {
+            color: #000;
+            font-family: Lato;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            @include sm() {
+                text-align: center;
+                font-size: 28px;
+            }
+        }
+        h2 {
+            color: #222;
+            font-family: Montserrat;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            // align-self: start;
+            @include sm() {
+                text-align: center;
+                font-size: 30px;
+            }
+        }
+        p {
+            color: #02055A;
+            font-family: Montserrat;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            @include sm() {
+                text-align: center;
+                font-size: 24px;
+            }
+        }
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        .contact_info {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            h5 {
+                color: #504C4C;
+                font-family: Montserrat;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                @include sm() {
+                    font-size: 20px;
+                }
+            }
+            p {
+                color: #253DA1;
+                font-family: Montserrat;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                @include sm() {
+                    font-size: 14px;
+                }
+            }
+        }
+        article {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding-top: 30px;
+            gap: 5px;
+            h5 {
+                color: #353535;
+                font-family: Montserrat;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                @include sm() {
+                    font-size: 14px;
+                }
+            }
+            p {
+                color: #2D2C2C;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                @include sm() {
+                    font-size: 12px;
+                }
+            }
+        }
+        div {
+            margin: 100px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            .print_ticket {
+                display: flex;
+                width: 359px;
+                padding: 10px 64px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                color: #FFF;
+                font-family: Montserrat;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                border-radius: 10px;
+                background: #526FE8;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                @include sm() {
+                    font-size: 20px;
+                    width: 100%;
+                }
+            }
+            .cancel_order {
+                display: flex;
+                width: 359px;
+                padding: 13px 50px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                color: #000;
+                font-family: Raleway;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                border-radius: 5px;
+                border: 2px solid #2140D6;
+                background: #FFF;
+                outline: none;
+                cursor: pointer;
+                @include sm() {
+                    font-size: 16px;
+                    width: 100%;
+                }
+            }
+            .contact_org {
+                display: flex;
+                width: 359px;
+                padding: 10px 64px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                color: #FFF;
+                font-family: Montserrat;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                border-radius: 10px;
+                background: #F29582;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                @include sm() {
+                    font-size: 20px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

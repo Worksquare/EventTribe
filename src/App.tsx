@@ -23,6 +23,8 @@ import AuthorizedPageLayout from "./layouts/AuthorizedPageLayout";
 import EventsListing from "./pages/EventsListingPage";
 import Event from "./pages/EventPage";
 import TicketInfoPage from "./pages/TicketInfoPage";
+import CheckoutPage from "./pages/CheckoutPage";
+import TicketPrintOutPage from "./pages/TicketPrintoutPage";
 
 const App = () => {
   const location = useLocation();
@@ -57,6 +59,8 @@ const App = () => {
             <Route path={routePaths.EVENT_LISTINGS} element={<EventsListing />} />
             <Route path={routePaths.EVENT} element={<Event />} />
             <Route path={routePaths.TICKET_INFO} element={<TicketInfoPage/>} />
+            <Route path={routePaths.CHECKOUT} element={<CheckoutPage />} />
+            <Route path={routePaths.TICKET_PRINTOUT} element={<TicketPrintOutPage />} />
           </Route>
         </Routes>
       </AnimatePresence>
